@@ -1,23 +1,36 @@
+
+/*==============================Universal CSS====================================*/
+
 body html {
     margin: 0;
     padding: 0;
 }
 
 .navbar-brand {
-    color: lightblue !important;
+    color: rgb(35, 35, 35) !important;
     font-size: 30px;
     /* font-weight: bold; */
     font-family: 'Bree Serif', serif;
-    text-shadow:2px 2px 4px #000000;
+    text-shadow:1px 1px 2px #000000;
 }
 
 .active {
-    color: red !important;
+    color: rgb(35, 35, 35) !important;
+}
+
+.nav-link {
+    color: rgb(140, 140, 140) !important;
+    font-weight: bold !important;
+    -webkit-transition: color 1s;
+    -moz-transition:    color 1s;
+    -ms-transition:     color 1s;
+    -o-transition:      color 1s;
+    transition:         color 1s;
 }
 
 .nav-link:hover {
-    color: red !important;
-    text-shadow:2px 2px 4px #000000;
+    color: rgb(35, 35, 35) !important;
+    text-shadow:1px 1px 2px #000000 !important;
 }
 
 /*.backgroundimg {
@@ -34,17 +47,13 @@ body html {
     padding: 15px;
 }*/
 
-form{
+/* form{
     position: fixed;
      top: 50%;
      left:50%;
      transform: translate(-50%,-50%);
      
-}
-
-.jumbotron {
-    background-color: rgba(255, 255, 255, 0) !important;
-}
+} */
 
 .card {
     float: right;
@@ -61,14 +70,64 @@ footer {
     height:70px;
 }
 
+.fa-github, .fa-envelope-square, .fa-linkedin {
+    -webkit-transition: color 1s;
+    -moz-transition:    color 1s;
+    -ms-transition:     color 1s;
+    -o-transition:      color 1s;
+    transition:         color 1s;
+}
+
+.fa-github:hover {
+    color: rgb(80, 126, 141) !important;
+    text-shadow:2px 2px 4px #000000 !important;   
+}
+
+.fa-envelope-square:hover {
+    color: rebeccapurple !important;
+    text-shadow:2px 2px 4px #000000 !important;
+}
+
+.fa-linkedin:hover {
+    color: red !important;
+    text-shadow:2px 2px 4px #000000 !important;
+}
+
+/*==============================index.html CSS====================================*/
+.jumbotron {
+    background-color: rgba(255, 255, 255, 0) !important;
+}
+
+/*==============================contact.html CSS====================================*/
+
+.contactHeader {
+    font-family: 'Fredoka One', cursive;
+}
+
+.contactMsg {
+    font-size: 20px;
+    color: rgb(95, 95, 95);
+}
+
+.miniInfo {
+    
+}
+
+
+
+/*==============================@media query CSS====================================*/
+
 @media only screen and (max-width: 600px) {
     body {
-        background-color: lightblue;
+        /* background-color: lightblue; */
     }
 
     .fa-github, .fa-envelope-square, .fa-linkedin {
         text-align: center;
         position: fixed;
         bottom: 10px;
+        font-size: 30px;
     }
+
+
 }
