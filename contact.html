@@ -29,7 +29,7 @@
   <div class="row backgroundimg">
     <div class="container">
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand">Michael Xiong</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
           aria-expanded="false" aria-label="Toggle navigation">
@@ -38,13 +38,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" id="navLink" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
+              <a class="nav-link" id="navLink" href="portfolio.html">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="contact.html">Contact
+              <a class="nav-link active" id="navLink" href="contact.html">Contact
                 <span class="sr-only">(current)</span>
               </a>
             </li>
@@ -52,36 +52,39 @@
         </div>
       </nav>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
-            <div>
-              <br><br>
-              <h1 class="contactHeader">Contact</h1>
+
+      <div class="jumbotron">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <div>
+                <br><br>
+                <h1 class="contactHeader">Contact</h1>
+              </div>
+              <p class="contactMsg">
+                Please feel free to contact me. I look forward to speaking with you.
+              </p>
             </div>
-            <p class="contactMsg">
-              Please feel free to contact me. I look forward to speaking with you.
-            </p>
           </div>
         </div>
-      </div>
 
 
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <div>
-              <h6>
-                <p class="contactMiniHeader">Call</p>
-              </h6>
-              <a class="miniInfo">1 530 7017753</a>
-              <br><br>
-              <h6>
-                <p class="contactMiniHeader">Email Address</p>
-              </h6>
-              <a class="miniInfo">michaelxy05@gmail.com</a>
-            </div>
-            <!-- <form>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div>
+                <br><br>
+                <h6>
+                  <p class="contactMiniHeader">Call</p>
+                </h6>
+                <a class="miniInfo">1 530 7017753</a>
+                <br><br>
+                <h6>
+                  <p class="contactMiniHeader">Email Address</p>
+                </h6>
+                <a class="miniInfo">michaelxy05@gmail.com</a>
+              </div>
+              <!-- <form>
               <div class="form-group">
                 <label for="formGroupExampleInput">Name</label>
                 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Write First and Last name here...">
@@ -96,54 +99,60 @@
               </div>
               <button type="submit" class="btn btn-primary">Submit</button>
             </form> -->
-          </div>
-          <div class="col-md-4">
-            <div>
-              <br><br>
-              <h6>
-                <p class="contactMiniHeader">Physical Address</p>
-              </h6>
-              <a>
-                5438 Silver Street
-              </a>
-              <br>
-              <a>
-                Breverly Hills, CA
-              </a>
-              <br>
-              <a>
-                90210
-              </a>
+            </div>
+            <div class="col-md-4">
+              <div>
+                <br><br>
+                <h6>
+                  <p class="contactMiniHeader">Physical Address</p>
+                </h6>
+                <a class="miniInfo">
+                  5438 Silver Street
+                </a>
+                <br>
+                <a class="miniInfo">
+                  Breverly Hills, CA
+                </a>
+                <br>
+                <a class="miniInfo">
+                  90210
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <nav class="socialnav social--contact">
+                <br><br>
+                <p>
+                  <a class="fa fa-github" style="font-size:30px;color:lightblue;text-shadow:1px 1px 2px #000000;" href="https://github.com/Michaelxy05"
+                    target="_blank"></a>
+                  <a class="fa fa-envelope-square" style="font-size:30px;color:lightblue;text-shadow:1px 1px 2px #000000;"
+                    href="mailto:michaelxy05@gmail.com>" target="_blank"></a>
+                  <a class="fa fa-linkedin" style="font-size:30px;color:lightblue;text-shadow:1px 1px 2px #000000;"
+                    href="https://www.linkedin.com/in/michael-xiong-24069b168/>" target="_blank"></a>
+                </p>
+              </nav>
             </div>
           </div>
-          <div class="col-md-4">
-            <nav class="socialnav social--contact">
-              <p>
-                <a class="fa fa-github" style="font-size:30px;color:lightblue;text-shadow:1px 1px 2px #000000;" href="https://github.com/Michaelxy05"
-                  target="_blank"></a>
-                <a class="fa fa-envelope-square" style="font-size:30px;color:lightblue;text-shadow:1px 1px 2px #000000;"
-                  href="mailto:michaelxy05@gmail.com>" target="_blank"></a>
-                <a class="fa fa-linkedin" style="font-size:30px;color:lightblue;text-shadow:1px 1px 2px #000000;" href="https://www.linkedin.com/in/michael-xiong-24069b168/>"
-                  target="_blank"></a>
-              </p>
-            </nav>
-          </div>
         </div>
+
       </div>
-
-
+      <!--jumbotron ends here -->
     </div>
   </div>
+
+  <script src="assets/javascript/main.js"></script>
 </body>
 
 <footer id="footer" class="clearfix">
   <div class="container">
     <div class="row">
       <div class="col-md-4">
-        <p>© 2018 Michael Xiong</p>
+        <br>
+        <p class="copyRight">© 2018 Michael Xiong</p>
       </div>
       <div class="col-md-4">
-
+          <br>
+          <p class="copyRight">mXiongDesign | Built with ♥</p>
       </div>
       <div class="col-md-4">
         <p>

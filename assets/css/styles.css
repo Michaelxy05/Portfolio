@@ -1,13 +1,23 @@
 
 /*==============================Universal CSS====================================*/
 
-body html {
+body, html {
     margin: 0;
     padding: 0;
+    background-color: #090909 !important;
 }
 
+.bg-dark {
+    background-color: #090909 !important;
+    /* position:fixed; */
+}
+
+/* .navbar-toggler {
+    color: rgb(158, 157, 157) !important;
+} */
+
 .navbar-brand {
-    color: rgb(35, 35, 35) !important;
+    color: rgb(65, 65, 65) !important;
     font-size: 30px;
     /* font-weight: bold; */
     font-family: 'Bree Serif', serif;
@@ -18,7 +28,7 @@ body html {
     color: rgb(35, 35, 35) !important;
 }
 
-.nav-link {
+#navLink {
     color: rgb(140, 140, 140) !important;
     font-weight: bold !important;
     -webkit-transition: color 1s;
@@ -26,10 +36,39 @@ body html {
     -ms-transition:     color 1s;
     -o-transition:      color 1s;
     transition:         color 1s;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
 }
 
-.nav-link:hover {
-    color: rgb(35, 35, 35) !important;
+#navLink:visited {
+    color:  #cf0202;
+  }
+
+#navLink:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #ee1c00;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#navLink:visited::after {
+    background-color: #cf0202;
+  }
+
+#navLink:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#navLink:hover {
+    color: rgb(201, 201, 201) !important;
     text-shadow:1px 1px 2px #000000 !important;
 }
 
@@ -70,6 +109,10 @@ footer {
     height:70px;
 }
 
+.copyRight {
+    color: rgb(175, 175, 175) !important;
+}
+
 .fa-github, .fa-envelope-square, .fa-linkedin {
     -webkit-transition: color 1s;
     -moz-transition:    color 1s;
@@ -96,34 +139,63 @@ footer {
 /*==============================index.html CSS====================================*/
 .jumbotron {
     background-color: rgba(255, 255, 255, 0) !important;
+    background-image: url("../images/keyboard_off.png");
+    background-repeat: no-repeat;
+    transition: background-image 5s;
+    height: 800px;
+}
+
+.jumbotron:hover {
+    background-image: url("../images/keyboard_on.png");
+    color: rgb(192, 189, 189) !important;
 }
 
 /*==============================contact.html CSS====================================*/
 
 .contactHeader {
     font-family: 'Fredoka One', cursive;
+    -webkit-transition: color 3s;
+    -moz-transition:    color 3s;
+    -ms-transition:     color 3s;
+    -o-transition:      color 3s;
+    transition:         color 3s;
 }
 
 .contactMsg {
     font-size: 20px;
     color: rgb(95, 95, 95);
+    -webkit-transition: color 3s;
+    -moz-transition:    color 3s;
+    -ms-transition:     color 3s;
+    -o-transition:      color 3s;
+    transition:         color 3s;
 }
 
-.miniInfo {
-    
+.miniInfo, .miniHeader, .contactMiniHeader {
+    -webkit-transition: color 3s;
+    -moz-transition:    color 3s;
+    -ms-transition:     color 3s;
+    -o-transition:      color 3s;
+    transition:         color 3s;
 }
 
 /*==============================portfloio.html CSS==================================*/
 
+.card-text {
+    color: #090909 !important;
+}
 /* .d-flex {
     text-shadow:6px 6px 12px #000000 !important;
 } */
 
+/* .card-body {
+    background-color: #00000000;
+} */
 
 
 /*==============================@media query CSS====================================*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 300px) {
     body {
         /* background-color: lightblue; */
     }
@@ -135,5 +207,9 @@ footer {
         font-size: 30px;
     }
 
+    .socialnav {
+        display: table-cell;
+        /* position: relative; */
 
+    }
 }

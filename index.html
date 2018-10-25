@@ -29,7 +29,7 @@
   <div class="row backgroundimg">
     <div class="container">
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand">Michael Xiong</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
           aria-expanded="false" aria-label="Toggle navigation">
@@ -38,13 +38,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link active" id="navLink" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
+              <a class="nav-link" id="navLink" href="portfolio.html">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" id="navLink" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -55,11 +55,12 @@
       <div class="jumbotron">
         <div class="row">
           <div class="col-md-3 col-xs-3">
-            <img src="assets/images/173 x 270px.png" class="img-responsive img thumbnail">
+            <!-- <img src="assets/images/173 x 270px.png" class="img-responsive img thumbnail"> -->
           </div>
           <div class="col-md-9">
-            <p>
-              Hello my name is Michael. I am an aspiring web developer, hoping to learn full stack, including the skills
+            <p class="miniInfo">
+              Hello my name is Michael. I am an aspiring web developer, hoping to learn full stack, including the
+              skills
               needed to become
               a proficient frontend and backend developer. I am currently attending UC Davis Extension Bootcamp. It is
               challenging
@@ -72,7 +73,7 @@
 
             <br>
 
-            <p>
+            <p class="miniInfo">
               So why coding? After years of working dead end jobs, I find myself wondering annually, "Is this what I'm
               going to do until
               my body can no longer function?". After talking to two of my family memebers who are currently in the web
@@ -104,6 +105,7 @@
     </div>
   </div>
 
+  <script src="assets/javascript/main.js"></script>
 </body>
 
 
@@ -111,10 +113,12 @@
   <div class="container">
     <div class="row">
       <div class="col-md-4">
-        <p>© 2018 Michael Xiong</p>
+        <br>
+        <p class="copyRight">© 2018 Michael Xiong</p>
       </div>
       <div class="col-md-4">
-
+          <br>
+          <p class="copyRight">mXiongDesign | Built with ♥</p>
       </div>
       <div class="col-md-4">
         <p>
